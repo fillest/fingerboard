@@ -52,6 +52,8 @@ def main():
 
 	all_chromatic_notes = ['c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#', 'a', 'a#', 'b']
 
+	assert cli_args.tonic in all_chromatic_notes
+
 	# class major:
 	# 	def __init__(self, tonic):
 	# 		self.tonic = tonic
@@ -106,6 +108,7 @@ def main():
 	scales['major_pentatonic'] = [2, 2, 3, 2, 3]
 	scales['minor_pentatonic'] = [3, 2, 2, 3, 2]
 	scales['blues_minor'] = [3, 2, 1, 1, 3, 2]
+	scales['whole_tone'] = [2, 2, 2, 2, 2, 2]
 	#https://en.wikipedia.org/wiki/Pentatonic_scale
 	#TODO https://www.guitarscale.org/a.html
 
