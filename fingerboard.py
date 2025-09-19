@@ -114,6 +114,8 @@ def main():
 
 	built_in_tunings = {
 		'cello': ['c', 'g', 'd', 'a'],  #c2 g2 d3 a3
+		'cello_p4_a': ['f#', 'b', 'e', 'a'],  #perfect fourths (five semitones) like guitar (1 left in a)
+		'cello_p4_g': ['e', 'a', 'd', 'g'],  #(2 left in d)
 		'guitar': ['e', 'a', 'd', 'g', 'b', 'e'],  #e2 a2 d3 g3 b3 e4
 		'guitar_bass': ['e', 'a', 'd', 'g'],
 		'violin': ['g', 'd', 'a', 'e'],  #g3 d4 a4 e5
