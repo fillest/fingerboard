@@ -112,15 +112,20 @@ def main():
 	#https://en.wikipedia.org/wiki/Pentatonic_scale
 	#TODO https://www.guitarscale.org/a.html
 
+	#strings: Nth to 1st
 	built_in_tunings = {
-		'cello': ['c', 'g', 'd', 'a'],  #c2 g2 d3 a3
-		'cello_p4_a': ['f#', 'b', 'e', 'a'],  #perfect fourths (five semitones) like guitar (1 left in a)
-		'cello_p4_g': ['e', 'a', 'd', 'g'],  #(2 left in d)
 		'guitar': ['e', 'a', 'd', 'g', 'b', 'e'],  #e2 a2 d3 g3 b3 e4
-		'guitar_bass': ['e', 'a', 'd', 'g'],
-		'violin': ['g', 'd', 'a', 'e'],  #g3 d4 a4 e5
-		'violin5': ['c', 'g', 'd', 'a', 'e'],
+		'guitar_bass': ['e', 'a', 'd', 'g'],  #e1 a1 d2 g2
+
 		'piano': ['c'],
+		
+		'cello': ['c', 'g', 'd', 'a'],  #c2 g2 d3 a3
+		'cello_p4_high': ['f#', 'b', 'e', 'a'],  #perfect fourths (five semitones) (1st stays A)
+		'cello_p4_2': ['e', 'a', 'd', 'g'],  #(2nd stays D) -- E2 A2 D3 G3 (same as guitar standard)
+
+		'violin': ['g', 'd', 'a', 'e'],  #g3 d4 a4 e5
+		'violin5_low': ['c', 'g', 'd', 'a', 'e'],
+		'violin_p4_high': ['c#', 'f#', 'b', 'e'],  #perfect fourths (five semitones) like guitar (1st stays E)
 	}
 	strings = built_in_tunings.get(cli_args.tuning) or re.findall(r'[a-z]#?', cli_args.tuning)
 
